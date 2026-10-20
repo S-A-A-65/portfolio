@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Ahmed Salah - Backend Developer (.NET / C#) Portfolio. C#, ASP.NET Core MVC, Entity Framework Core, and MS SQL Server.">
+    <title>TEST MODE | Ahmed Salah</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <style>
+        body::before {
+            content: "TEST MODE";
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: red;
+            color: white;
+            padding: 5px 20px;
+            z-index: 10000;
+            font-weight: bold;
+            font-size: 12px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="scroll-progress" class="scroll-progress-bar"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">Ahmed<span>.</span>dev</a>
+
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Training & Education</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+
+            <div class="nav-controls">
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content fade-in-up">
+                <div class="status-pill">
+                    <span class="status-dot"></span> Available for .NET Backend Roles & Freelance
+                </div>
+                <div class="hero-degree-tag">
+                    <i class="fas fa-university"></i> Computer Science Student | Faculty of Computers & Information Technology
+                </div>
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Ahmed Salah</h1>
+                <h2 class="hero-role"><span class="typing-text"></span></h2>
+                <p class="hero-intro">
+                    Backend Developer (.NET / C#) with practical training from <strong>DEPI</strong> and <strong>ITI</strong>. Proficient in C#, ASP.NET Core MVC, and MS SQL Server. 
+                    Focused on building robust backend systems, solving complex problems, and optimizing database performance.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary"><i class="fas fa-code"></i> View Projects</a>
+                    <a href="Ahmed_Salah_CV.pdf" target="_blank" download class="btn btn-secondary"><i class="fas fa-file-download"></i> Download CV</a>
+                    <a href="#contact" class="btn btn-secondary"><i class="fas fa-paper-plane"></i> Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content" id="about-content">
+                <div class="about-image-wrapper fade-in-left">
+                    <img src="images/ahmed_black_tshirt.jpg" alt="Ahmed Salah Profile">
+                    <div class="experience-badge">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>DEPI & ITI Trainee</span>
+                    </div>
+                </div>
+                <div class="about-text fade-in-right">
+                    <p>
+                        I am a <strong>Computer Science student</strong> (2023 – Expected 2027) with practical backend software development training from the <strong>Information Technology Institute (ITI)</strong> 
+                        and the <strong>Digital Egypt Pioneers Initiative (DEPI)</strong>.
+                    </p>
+
+                    <h3 class="about-subtitle-tag">
+                        Focusing on Logical Core (Not Just Syntax) • Clean Architecture • Collaborative & Flexible Revisions
+                    </h3>
+
+                    <p>
+                        Combining deep Computer Science algorithmic foundations with practical ITI & DEPI enterprise training, I build high-performance .NET backend systems focused on logic, clean architecture, and zero compromise on execution speed.
+                    </p>
+
+                    <p>
+                        I specialize in helping engineering teams build scalable backend web portals, robust RESTful APIs, and optimized SQL databases using C#, ASP.NET Core MVC, Entity Framework Core, and T-SQL.
+                    </p>
+
+                    <p>
+                        Complementing my backend core, I possess solid web fundamentals in HTML5, CSS3, and JavaScript, allowing me to build fully connected MVC views and end-to-end web solutions seamlessly.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+
+            <div class="skills-grid">
+                <!-- Card 1: Languages & Core Track -->
+                <div class="skill-category card fade-in-up">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Languages & Core Track</h3>
+                    </div>
+                    <div class="skills-progress-list">
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fab fa-windows"></i> C# .NET</span>
+                                <span class="skill-level badge-expert">95% &bull; Expert</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-accent" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fas fa-database"></i> SQL (T-SQL)</span>
+                                <span class="skill-level badge-expert">90% &bull; Expert</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-blue" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fab fa-java"></i> Java Core</span>
+                                <span class="skill-level badge-advanced">80% &bull; Advanced</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-green" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fab fa-js-square"></i> JavaScript (ES6+)</span>
+                                <span class="skill-level badge-advanced">80% &bull; Advanced</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-blue" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fas fa-terminal"></i> C++ / Python</span>
+                                <span class="skill-level badge-advanced">75% &bull; Advanced</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-purple" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fas fa-brain"></i> Problem Solving & Logic</span>
+                                <span class="skill-level badge-advanced">80% &bull; Advanced</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-accent" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Frameworks & Web Tech -->
+                <div class="skill-category card fade-in-up" style="transition-delay: 0.1s;">
+                    <div class="category-header">
+                        <i class="fas fa-cubes"></i>
+                        <h3>Frameworks & Web Tech</h3>
+                    </div>
+                    <div class="skills-progress-list">
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fas fa-globe"></i> ASP.NET Core MVC</span>
+                                <span class="skill-level badge-advanced">70% &bull; Proficient</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-accent" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fas fa-layer-group"></i> Entity Framework Core</span>
+                                <span class="skill-level badge-expert">90% &bull; Expert</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-blue" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fas fa-filter"></i> LINQ Queries</span>
+                                <span class="skill-level badge-expert">90% &bull; Expert</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-green" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fab fa-html5"></i> HTML5 / JS Razor Views</span>
+                                <span class="skill-level badge-advanced">85% &bull; Advanced</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-purple" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fas fa-shield-alt"></i> Web Security Fundamentals</span>
+                                <span class="skill-level badge-advanced">85% &bull; Advanced</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-accent" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Database Engineering -->
+                <div class="skill-category card fade-in-up" style="transition-delay: 0.2s;">
+                    <div class="category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Database Engineering</h3>
+                    </div>
+                    <div class="skills-progress-list">
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fas fa-server"></i> MS SQL Server</span>
+                                <span class="skill-level badge-expert">92% &bull; Expert</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-accent" style="width: 92%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fas fa-sitemap"></i> Relational Schema Design</span>
+                                <span class="skill-level badge-expert">88% &bull; Advanced</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-blue" style="width: 88%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fas fa-file-code"></i> Stored Procedures</span>
+                                <span class="skill-level badge-advanced">85% &bull; Advanced</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-green" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fas fa-filter"></i> DB Normalization & Indexing</span>
+                                <span class="skill-level badge-advanced">88% &bull; Advanced</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-purple" style="width: 88%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fas fa-table"></i> Complex Joins & Views</span>
+                                <span class="skill-level badge-expert">90% &bull; Expert</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-accent" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Tools & Core Concepts -->
+                <div class="skill-category card fade-in-up" style="transition-delay: 0.3s;">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools & Core Concepts</h3>
+                    </div>
+                    <div class="skills-progress-list">
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fas fa-project-diagram"></i> OOP Architecture</span>
+                                <span class="skill-level badge-expert">95% &bull; Expert</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-accent" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fas fa-code-branch"></i> Clean Code Principles</span>
+                                <span class="skill-level badge-expert">92% &bull; Expert</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-blue" style="width: 92%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fas fa-tree"></i> Data Structures & Algorithms</span>
+                                <span class="skill-level badge-expert">90% &bull; Expert</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-green" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fas fa-network-wired"></i> Socket Programming & Threads</span>
+                                <span class="skill-level badge-advanced">80% &bull; Advanced</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-purple" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fab fa-git-alt"></i> Visual Studio & Git</span>
+                                <span class="skill-level badge-expert">92% &bull; Expert</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-accent" style="width: 92%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+
+                <div class="project-card card fade-in-up">
+                    <div class="project-content">
+                        <h3>Hospital Management System Web Portal</h3>
+                        <p>Built a web portal using ASP.NET Core MVC and EF Core to manage patient appointments, reducing scheduling conflicts by 30%.</p>
+                        <div class="project-tags">
+                            <span>C#</span>
+                            <span>ASP.NET Core MVC</span>
+                            <span>EF Core</span>
+                            <span>MS SQL Server</span>
+                        </div>
+                        <button type="button" class="btn-link view-project-btn">View Details <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                    <div class="project-details-content" style="display: none;">
+                        <h3>Hospital Management System Web Portal</h3>
+                        <div class="modal-body-content">
+                            <h4><i class="fas fa-info-circle"></i> Description</h4>
+                            <p>Built a web portal using ASP.NET Core MVC and EF Core to manage patient appointments, reducing scheduling conflicts by 30%.</p>
+                            <h4><i class="fas fa-check-circle"></i> Key Accomplishments</h4>
+                            <ul>
+                                <li>Implemented role-based access control (Admin, Doctor, Receptionist).</li>
+                                <li>Designed a database to efficiently handle over <strong>10,000 patient records</strong>.</li>
+                                <li>Applied Entity Framework Core and LINQ queries for data access and management.</li>
+                            </ul>
+                            <h4><i class="fas fa-laptop-code"></i> Technologies Used</h4>
+                            <p><strong>C#, ASP.NET Core MVC, Entity Framework Core, MS SQL Server, LINQ</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card card fade-in-up" style="transition-delay: 0.1s;">
+                    <div class="project-content">
+                        <h3>Real-Time Client-Server Chat System</h3>
+                        <p>Developed a multithreaded TCP/IP chat application in C# supporting real-time messaging for 50+ concurrent users.</p>
+                        <div class="project-tags">
+                            <span>C#</span>
+                            <span>.NET</span>
+                            <span>TCP/IP Sockets</span>
+                            <span>Multithreading</span>
+                        </div>
+                        <button type="button" class="btn-link view-project-btn">View Details <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                    <div class="project-details-content" style="display: none;">
+                        <h3>Real-Time Client-Server Chat System</h3>
+                        <div class="modal-body-content">
+                            <h4><i class="fas fa-info-circle"></i> Description</h4>
+                            <p>Developed a multithreaded TCP/IP chat application in C# supporting real-time messaging for 50+ concurrent users.</p>
+                            <h4><i class="fas fa-check-circle"></i> Key Accomplishments</h4>
+                            <ul>
+                                <li>Managed server connection lifecycles and thread synchronization.</li>
+                                <li>Ensured stable, reliable communication with zero thread leaks.</li>
+                                <li>Implemented client-server socket protocol architecture.</li>
+                            </ul>
+                            <h4><i class="fas fa-laptop-code"></i> Technologies Used</h4>
+                            <p><strong>C#, .NET, TCP/IP Sockets, Multithreading, Socket Programming</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card card fade-in-up" style="transition-delay: 0.2s;">
+                    <div class="project-content">
+                        <h3>Database Engineering & Query Optimization</h3>
+                        <p>Engineered 5 functional database-driven modules with full CRUD capabilities and optimized LINQ queries during ITI training.</p>
+                        <div class="project-tags">
+                            <span>C#</span>
+                            <span>MS SQL Server</span>
+                            <span>T-SQL</span>
+                            <span>LINQ</span>
+                        </div>
+                        <button type="button" class="btn-link view-project-btn">View Details <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                    <div class="project-details-content" style="display: none;">
+                        <h3>Database Engineering & Query Optimization</h3>
+                        <div class="modal-body-content">
+                            <h4><i class="fas fa-info-circle"></i> Description</h4>
+                            <p>Engineered 5 functional database-driven modules with full CRUD capabilities during intensive ITI training.</p>
+                            <h4><i class="fas fa-check-circle"></i> Key Accomplishments</h4>
+                            <ul>
+                                <li>Designed structured relational table schemas in SQL Server (T-SQL).</li>
+                                <li>Crafted complex LINQ queries, reducing database execution time in project simulations.</li>
+                                <li>Implemented data integrity constraints, foreign key relationships, and stored procedures.</li>
+                            </ul>
+                            <h4><i class="fas fa-laptop-code"></i> Technologies Used</h4>
+                            <p><strong>C#, MS SQL Server, LINQ, T-SQL, SSMS</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <h2 class="section-title">Training & Education</h2>
+            <div class="timeline">
+
+                <div class="timeline-item fade-in-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2026 – Present</div>
+                    <div class="timeline-content card">
+                        <div class="timeline-badge"><i class="fas fa-award"></i> MCIT Program</div>
+                        <h3>Digital Egypt Pioneers Initiative (DEPI)</h3>
+                        <h4>.NET Backend Development Trainee (MCIT)</h4>
+                        <p>Enrolled in the intensive .NET Backend Development track by the Ministry of Communications and Information Technology (MCIT). Focused on ASP.NET Core MVC, Entity Framework Core, clean architecture, and modern C# web development.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Summer 2026</div>
+                    <div class="timeline-content card">
+                        <div class="timeline-badge"><i class="fas fa-university"></i> ITI Training</div>
+                        <h3>Information Technology Institute (ITI)</h3>
+                        <h4>.NET Software Development Trainee</h4>
+                        <p>Completed intensive practical training, engineering 5 functional database-driven modules with full CRUD capabilities. Designed structured relational table schemas and complex LINQ queries, reducing database execution time in project simulations.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023 – Expected 2027</div>
+                    <div class="timeline-content card">
+                        <h3>Computer Science Student</h3>
+                        <h4>Faculty of Computers & Information Technology</h4>
+                        <p>Academic coursework and university projects in Software Engineering, Database Systems, Computer Networks, Web Development (HTML/CSS/JS), OOP, and Data Structures.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section services-section">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            <div class="services-grid">
+
+                <div class="service-card fade-in-up">
+                    <div class="service-card-top">
+                        <div class="service-icon-wrapper">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <span class="service-num">01</span>
+                    </div>
+                    <h3>ASP.NET Core & MVC Applications</h3>
+                    <p>Building high-performance, maintainable backend web applications and MVC portals with C#, ASP.NET Core, and Entity Framework Core.</p>
+                    <div class="service-features">
+                        <span class="service-tag"><i class="fas fa-check-circle"></i> Clean Architecture</span>
+                        <span class="service-tag"><i class="fas fa-check-circle"></i> EF Core ORM</span>
+                        <span class="service-tag"><i class="fas fa-check-circle"></i> MVC Views & Controllers</span>
+                    </div>
+                    <a href="#contact" class="service-action-btn"><span>Discuss Project</span> <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card fade-in-up" style="transition-delay: 0.1s;">
+                    <div class="service-card-top">
+                        <div class="service-icon-wrapper">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <span class="service-num">02</span>
+                    </div>
+                    <h3>SQL Server Database Engineering</h3>
+                    <p>Designing normalized relational SQL database schemas, writing complex T-SQL stored procedures, and tuning queries for maximum throughput.</p>
+                    <div class="service-features">
+                        <span class="service-tag"><i class="fas fa-check-circle"></i> Schema Normalization</span>
+                        <span class="service-tag"><i class="fas fa-check-circle"></i> T-SQL Stored Procedures</span>
+                        <span class="service-tag"><i class="fas fa-check-circle"></i> Query Optimization</span>
+                    </div>
+                    <a href="#contact" class="service-action-btn"><span>Optimize Database</span> <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card fade-in-up" style="transition-delay: 0.2s;">
+                    <div class="service-card-top">
+                        <div class="service-icon-wrapper">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <span class="service-num">03</span>
+                    </div>
+                    <h3>Multithreaded Socket & Systems Logic</h3>
+                    <p>Developing real-time TCP/IP client-server network applications with connection lifecycle management and robust thread synchronization.</p>
+                    <div class="service-features">
+                        <span class="service-tag"><i class="fas fa-check-circle"></i> TCP/IP Sockets</span>
+                        <span class="service-tag"><i class="fas fa-check-circle"></i> Multithreading</span>
+                        <span class="service-tag"><i class="fas fa-check-circle"></i> Memory Safety</span>
+                    </div>
+                    <a href="#contact" class="service-action-btn"><span>Build Solution</span> <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card fade-in-up" style="transition-delay: 0.3s;">
+                    <div class="service-card-top">
+                        <div class="service-icon-wrapper">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <span class="service-num">04</span>
+                    </div>
+                    <h3>Iterative Development & Collaboration</h3>
+                    <p>Working step-by-step alongside clients and engineering teams—offering flexible feedback accommodation, transparent communication, and continuous revisions.</p>
+                    <div class="service-features">
+                        <span class="service-tag"><i class="fas fa-check-circle"></i> Step-by-Step Delivery</span>
+                        <span class="service-tag"><i class="fas fa-check-circle"></i> Continuous Feedback</span>
+                        <span class="service-tag"><i class="fas fa-check-circle"></i> Flexible Revisions</span>
+                    </div>
+                    <a href="#contact" class="service-action-btn"><span>Start Collaboration</span> <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-wrapper">
+
+                <div class="contact-info fade-in-left">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out for backend development opportunities, collaborations, or technical inquiries.</p>
+
+                    <div class="contact-details-list">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Sohag,+Egypt" target="_blank"
+                                aria-label="View Location on Google Maps">Sohag, Egypt</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <a href="https://wa.me/201157492327" target="_blank"
+                                aria-label="Chat on WhatsApp">+20 115 749 2327</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:ahmed.salah35084846@gmail.com" aria-label="Send Email">ahmed.salah35084846@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/ahmed-salah-b99353293" target="_blank" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/ahmed-salah" target="_blank" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100077121641925" target="_blank" aria-label="Facebook"><i
+                                class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form fade-in-right" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="sendBtn">
+                        Send Message <i class="fas fa-paper-plane" style="margin-left: 8px;"></i>
+                    </button>
+                    <p class="contact-message" id="contactMessage"></p>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Ahmed Salah. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="project-modal" class="modal-overlay">
+        <div class="modal-container">
+            <button class="close-modal">&times;</button>
+            <div class="modal-header">
+                <h3 id="modal-title">Project Details</h3>
+            </div>
+            <div id="modal-body" class="modal-body">
+            </div>
+        </div>
+    </div>
+
+    <button id="backToTop" class="back-to-top-btn" aria-label="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+
+    <script src="js/test_suite.js"></script>
+</body>
+
+</html>

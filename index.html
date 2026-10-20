@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Ahmed Salah - Backend Developer (.NET / C#) Portfolio. C#, ASP.NET Core MVC, Entity Framework Core, and MS SQL Server.">
+    <title>Ahmed Salah | Backend Developer (.NET / C#)</title>
+
+    <!-- Open Graph & Social SEO -->
+    <meta property="og:title" content="Ahmed Salah | Backend Developer (.NET / C#)">
+    <meta property="og:description" content="Backend Developer specialized in C#, ASP.NET Core MVC, Entity Framework Core, MS SQL Server, and High-Performance Architecture.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ahmedsalah.dev/">
+    <meta property="og:image" content="images/ahmed_black_tshirt.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ahmed Salah | Backend Developer (.NET / C#)">
+    <meta name="twitter:description" content="Backend Developer specialized in C#, ASP.NET Core MVC, Entity Framework Core, and MS SQL Server.">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <!-- JSON-LD Structured Data Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ahmed Salah",
+      "jobTitle": ".NET Backend Developer",
+      "url": "https://ahmedsalah.dev",
+      "sameAs": [
+        "https://www.linkedin.com/in/ahmed-salah-b99353293",
+        "https://github.com/ahmed-salah",
+        "https://www.facebook.com/profile.php?id=100077121641925"
+      ],
+      "knowsAbout": [
+        "C#",
+        ".NET Core",
+        "ASP.NET Core MVC",
+        "Entity Framework Core",
+        "MS SQL Server",
+        "T-SQL",
+        "LINQ",
+        "Multithreaded Socket Programming",
+        "Clean Architecture"
+      ],
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Information Technology Institute (ITI)"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Digital Egypt Pioneers Initiative (DEPI)"
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <div id="scroll-progress" class="scroll-progress-bar"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">Ahmed<span>.</span>dev</a>
+
+            <ul class="nav-links">
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="#experience" data-i18n="nav.experience">Training &amp; Education</a></li>
+                <li><a href="#services" data-i18n="nav.services">Services</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact Me</a></li>
+            </ul>
+
+            <div class="nav-controls">
+                <button id="lang-toggle" class="lang-toggle-btn" aria-label="Toggle Language">
+                    <i class="fas fa-globe"></i> <span id="lang-text">AR</span>
+                </button>
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero-section hero-centered-section">
+        <div class="container hero-container hero-centered-container">
+
+            <div class="hero-content hero-centered-content fade-in-up">
+                <div class="status-pill">
+                    <span class="status-dot"></span> <span data-i18n="hero.status">Available for .NET Backend Roles &amp; Freelance</span>
+                </div>
+                <p class="hero-greeting" data-i18n="hero.greeting">Hello, I'm</p>
+                <h1 class="hero-name hero-name-glow">Ahmed Salah</h1>
+                <h2 class="hero-role"><span class="typing-text"></span></h2>
+                <p class="hero-intro" data-i18n="hero.intro">
+                    Backend Developer (.NET / C#) with practical training from <strong>DEPI</strong> and <strong>ITI</strong>. Proficient in C#, ASP.NET Core MVC, and MS SQL Server.
+                    Focused on building robust backend systems, solving complex problems, and optimizing database performance.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary"><i class="fas fa-code"></i> <span data-i18n="hero.btnProjects">View Projects</span></a>
+                    <a href="Ahmed_Salah_CV.pdf" target="_blank" download class="btn btn-secondary"><i class="fas fa-file-download"></i> <span data-i18n="hero.btnCv">Download CV</span></a>
+                    <a href="#contact" class="btn btn-secondary"><i class="fas fa-paper-plane"></i> <span data-i18n="hero.btnContact">Contact Me</span></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about.title">About Me</h2>
+            <div class="about-content" id="about-content">
+                <div class="about-image-wrapper fade-in-left" style="position: relative;">
+                    <div class="hero-photo-ring">
+                        <img src="images/ahmed_black_tshirt.jpg" alt="Ahmed Salah Profile" class="hero-photo-img">
+                        <div class="hero-photo-glow"></div>
+                    </div>
+                    <div class="experience-badge">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span data-i18n="about.badge">DEPI &amp; ITI Trainee</span>
+                    </div>
+                    <span class="hero-tech-badge badge-dotnet" style="top: 10px; right: -15px;"><i class="fas fa-dot-circle"></i> .NET</span>
+                    <span class="hero-tech-badge badge-csharp" style="bottom: 40px; right: -20px;"><i class="fas fa-code"></i> C#</span>
+                    <span class="hero-tech-badge badge-sql" style="top: 15px; left: -15px;"><i class="fas fa-database"></i> SQL</span>
+                    <span class="hero-tech-badge badge-ef" style="bottom: 45px; left: -20px;"><i class="fas fa-layer-group"></i> EF Core</span>
+                </div>
+                <div class="about-text fade-in-right">
+                    <p data-i18n="about.p1">
+                        I am a <strong>Computer Science student</strong> (2023 – Expected 2027) with practical backend software development training from the <strong>Information Technology Institute (ITI)</strong> 
+                        and the <strong>Digital Egypt Pioneers Initiative (DEPI)</strong>.
+                    </p>
+
+                    <h3 class="about-subtitle-tag" data-i18n="about.subtitleTag">
+                        Focusing on Logical Core (Not Just Syntax) • Clean Architecture • Collaborative & Flexible Revisions
+                    </h3>
+
+                    <p data-i18n="about.p2">
+                        Combining deep Computer Science algorithmic foundations with practical ITI & DEPI enterprise training, I build high-performance .NET backend systems focused on logic, clean architecture, and zero compromise on execution speed.
+                    </p>
+
+                    <p data-i18n="about.p3">
+                        I specialize in helping engineering teams build scalable backend web portals, robust RESTful APIs, and optimized SQL databases using C#, ASP.NET Core MVC, Entity Framework Core, and T-SQL.
+                    </p>
+
+                    <p data-i18n="about.p4">
+                        Complementing my backend core, I possess solid web fundamentals in HTML5, CSS3, and JavaScript, allowing me to build fully connected MVC views and end-to-end web solutions seamlessly.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="skills.title">Technical Skills</h2>
+
+            <div class="skills-grid">
+                <!-- Card 1: Languages & Core Track -->
+                <div class="skill-category card fade-in-up">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3 data-i18n="skills.cat1">Languages &amp; Core Track</h3>
+                    </div>
+                    <div class="skills-progress-list">
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fab fa-windows"></i> C# .NET</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-accent" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fas fa-database"></i> SQL (T-SQL)</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-blue" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fas fa-brain"></i> OOP &amp; Problem Solving</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-green" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Frameworks & Web Tech -->
+                <div class="skill-category card fade-in-up" style="transition-delay: 0.1s;">
+                    <div class="category-header">
+                        <i class="fas fa-cubes"></i>
+                        <h3 data-i18n="skills.cat2">Frameworks &amp; Web Tech</h3>
+                    </div>
+                    <div class="skills-progress-list">
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fas fa-globe"></i> ASP.NET Core MVC</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-accent" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fas fa-layer-group"></i> Entity Framework Core</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-blue" style="width: 92%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fas fa-filter"></i> LINQ &amp; Web APIs</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-purple" style="width: 88%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Database Engineering -->
+                <div class="skill-category card fade-in-up" style="transition-delay: 0.2s;">
+                    <div class="category-header">
+                        <i class="fas fa-database"></i>
+                        <h3 data-i18n="skills.cat3">Database Engineering</h3>
+                    </div>
+                    <div class="skills-progress-list">
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fas fa-server"></i> MS SQL Server</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-accent" style="width: 92%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fas fa-sitemap"></i> Relational Schema Design</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-blue" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fas fa-file-code"></i> Stored Procedures &amp; Joins</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-green" style="width: 88%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Tools & Core Concepts -->
+                <div class="skill-category card fade-in-up" style="transition-delay: 0.3s;">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3 data-i18n="skills.cat4">Tools &amp; Core Concepts</h3>
+                    </div>
+                    <div class="skills-progress-list">
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fas fa-code-branch"></i> Clean Code &amp; Architecture</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-accent" style="width: 92%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fas fa-tree"></i> Data Structures &amp; Algorithms</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-blue" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-info-header">
+                                <span class="skill-name"><i class="fab fa-git-alt"></i> Visual Studio &amp; Git</span>
+                            </div>
+                            <div class="skill-progress-track">
+                                <div class="skill-progress-fill bar-purple" style="width: 92%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="projects.title">Featured Projects</h2>
+            <p class="section-subtitle-text" style="text-align: center; color: var(--text-muted); margin-bottom: 25px;" data-i18n="projects.subtitle">Explore backend engineering projects, architectural patterns, and live code implementations.</p>
+
+            <!-- Project Filter Controls -->
+            <div class="project-filter-wrapper fade-in-up">
+                <button class="project-filter-btn active" data-filter="all"><i class="fas fa-th-large"></i> <span data-i18n="projects.filterAll">All Projects</span></button>
+                <button class="project-filter-btn" data-filter="dotnet"><i class="fab fa-windows"></i> <span data-i18n="projects.filterDotnet">ASP.NET Core MVC</span></button>
+                <button class="project-filter-btn" data-filter="database"><i class="fas fa-database"></i> <span data-i18n="projects.filterDatabase">Database &amp; SQL</span></button>
+                <button class="project-filter-btn" data-filter="sockets"><i class="fas fa-network-wired"></i> <span data-i18n="projects.filterSockets">TCP/IP Sockets</span></button>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Project 1: Hospital Management -->
+                <div class="project-card card fade-in-up" data-category="dotnet">
+                    <div class="project-thumb">
+                        <img src="images/hospital_project.jpg" alt="Hospital Management System Web Portal" class="project-thumb-img">
+                        <div class="project-thumb-label">ASP.NET Core MVC</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Hospital Management System Web Portal</h3>
+                        <p>Built a web portal using ASP.NET Core MVC and EF Core to manage patient appointments, reducing scheduling conflicts by 30%.</p>
+                        <div class="project-tags">
+                            <span>C#</span>
+                            <span>ASP.NET Core MVC</span>
+                            <span>EF Core</span>
+                            <span>MS SQL Server</span>
+                        </div>
+                        <div class="project-actions">
+                            <button type="button" class="btn-link view-project-btn">View Details &amp; Code <i class="fas fa-code"></i></button>
+                            <a href="https://github.com/ahmed-salah" target="_blank" class="btn-link project-github-link"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-details-content" style="display: none;">
+                        <h3>Hospital Management System Web Portal</h3>
+                        <div class="modal-body-content">
+                            <h4><i class="fas fa-info-circle"></i> Project Architecture &amp; Overview</h4>
+                            <p>Built an enterprise-level web portal using ASP.NET Core MVC and Entity Framework Core to streamline patient registration, medical history records, and doctor appointment scheduling.</p>
+                            
+                            <h4><i class="fas fa-check-circle"></i> Key Accomplishments</h4>
+                            <ul>
+                                <li>Implemented role-based authorization (Admin, Doctor, Receptionist, Patient) with ASP.NET Core Identity.</li>
+                                <li>Optimized database indexing to support over <strong>10,000 patient records</strong> with response times &lt; 50ms.</li>
+                                <li>Integrated validation logic preventing doctor schedule double-booking.</li>
+                            </ul>
+
+                            <h4><i class="fas fa-code"></i> Backend C# Code Snippet (EF Core &amp; LINQ)</h4>
+                            <div class="code-snippet-wrapper">
+                                <div class="code-header">
+                                    <span><i class="fas fa-file-code"></i> AppointmentService.cs</span>
+                                    <span class="code-lang">C# / .NET Core</span>
+                                </div>
+                                <pre><code class="language-csharp">public async Task&lt;ServiceResult&lt;AppointmentDto&gt;&gt; BookAppointmentAsync(CreateAppointmentDto dto)
+{
+    // Prevent double booking with LINQ query optimization
+    bool isConflict = await _context.Appointments
+        .AnyAsync(a => a.DoctorId == dto.DoctorId 
+                    && a.AppointmentDate == dto.AppointmentDate 
+                    && a.Status != AppointmentStatus.Cancelled);
+
+    if (isConflict)
+        return ServiceResult&lt;AppointmentDto&gt;.Failure("Doctor is already booked at this time slot.");
+
+    var entity = _mapper.Map&lt;Appointment&gt;(dto);
+    _context.Appointments.Add(entity);
+    await _context.SaveChangesAsync();
+
+    return ServiceResult&lt;AppointmentDto&gt;.Success(_mapper.Map&lt;AppointmentDto&gt;(entity));
+}</code></pre>
+                            </div>
+
+                            <h4><i class="fas fa-laptop-code"></i> Technologies Used</h4>
+                            <p><strong>C#, ASP.NET Core MVC, Entity Framework Core, MS SQL Server, LINQ, AutoMapper</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: TCP Chat System -->
+                <div class="project-card card fade-in-up" data-category="sockets" style="transition-delay: 0.1s;">
+                    <div class="project-thumb">
+                        <img src="images/chat_project.jpg" alt="Real-Time Client-Server Chat System" class="project-thumb-img">
+                        <div class="project-thumb-label">TCP/IP Sockets</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Real-Time Client-Server Chat System</h3>
+                        <p>Developed a multithreaded TCP/IP chat application in C# supporting real-time messaging for 50+ concurrent users with zero memory leaks.</p>
+                        <div class="project-tags">
+                            <span>C#</span>
+                            <span>.NET</span>
+                            <span>TCP/IP Sockets</span>
+                            <span>Multithreading</span>
+                        </div>
+                        <div class="project-actions">
+                            <button type="button" class="btn-link view-project-btn">View Details &amp; Code <i class="fas fa-code"></i></button>
+                            <a href="https://github.com/ahmed-salah" target="_blank" class="btn-link project-github-link"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-details-content" style="display: none;">
+                        <h3>Real-Time Client-Server Chat System</h3>
+                        <div class="modal-body-content">
+                            <h4><i class="fas fa-info-circle"></i> Network Architecture</h4>
+                            <p>Developed a multi-client socket server application engineered in C# with raw `System.Net.Sockets`. Designed custom packet framing and concurrent connection handling.</p>
+                            
+                            <h4><i class="fas fa-check-circle"></i> Technical Highlights</h4>
+                            <ul>
+                                <li>Managed server connection lifecycles and thread synchronization using `ConcurrentDictionary` and `SemaphoreSlim`.</li>
+                                <li>Handled 50+ concurrent TCP connections with minimal CPU overhead and zero memory leaks.</li>
+                                <li>Implemented message broadcasting protocols and client connection heartbeat checks.</li>
+                            </ul>
+
+                            <h4><i class="fas fa-code"></i> Backend C# Socket Listener Snippet</h4>
+                            <div class="code-snippet-wrapper">
+                                <div class="code-header">
+                                    <span><i class="fas fa-file-code"></i> SocketServer.cs</span>
+                                    <span class="code-lang">C# / Async Threads</span>
+                                </div>
+                                <pre><code class="language-csharp">public async Task StartListenerAsync(int port, CancellationToken ct)
+{
+    var listener = new TcpListener(IPAddress.Any, port);
+    listener.Start();
+    _logger.LogInformation("TCP Chat Server listening on port {Port}", port);
+
+    while (!ct.IsCancellationRequested)
+    {
+        TcpClient client = await listener.AcceptTcpClientAsync(ct);
+        string clientId = Guid.NewGuid().ToString("N");
+        
+        // Spawn async non-blocking task per connection loop
+        _ = Task.Run(() => HandleClientSessionAsync(clientId, client, ct), ct);
+    }
+}</code></pre>
+                            </div>
+
+                            <h4><i class="fas fa-laptop-code"></i> Technologies Used</h4>
+                            <p><strong>C#, .NET, TCP/IP Sockets, Threading, Task Parallel Library (TPL), System.Net.Sockets</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Database Engineering -->
+                <div class="project-card card fade-in-up" data-category="database" style="transition-delay: 0.2s;">
+                    <div class="project-thumb">
+                        <img src="images/database_project.jpg" alt="Database Engineering &amp; Query Optimization" class="project-thumb-img">
+                        <div class="project-thumb-label">MS SQL Server</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Database Engineering &amp; Query Optimization</h3>
+                        <p>Engineered 5 functional database-driven modules with full CRUD capabilities and optimized T-SQL stored procedures during ITI training.</p>
+                        <div class="project-tags">
+                            <span>C#</span>
+                            <span>MS SQL Server</span>
+                            <span>T-SQL</span>
+                            <span>Stored Procedures</span>
+                        </div>
+                        <div class="project-actions">
+                            <button type="button" class="btn-link view-project-btn">View Details &amp; Code <i class="fas fa-code"></i></button>
+                            <a href="https://github.com/ahmed-salah" target="_blank" class="btn-link project-github-link"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-details-content" style="display: none;">
+                        <h3>Database Engineering &amp; Query Optimization</h3>
+                        <div class="modal-body-content">
+                            <h4><i class="fas fa-info-circle"></i> Database Architecture Overview</h4>
+                            <p>Engineered multi-table relational schema designs for enterprise modules during intensive ITI training. Focused on 3NF normalization, index optimization, and transaction safety.</p>
+                            
+                            <h4><i class="fas fa-check-circle"></i> Key Accomplishments</h4>
+                            <ul>
+                                <li>Designed 3NF database schemas in MS SQL Server (T-SQL) with strict foreign key constraints.</li>
+                                <li>Crafted optimized LINQ &amp; T-SQL stored procedures, improving query execution time by up to 35%.</li>
+                                <li>Implemented transactional rollback blocks (`BEGIN TRANSACTION`) for financial and inventory updates.</li>
+                            </ul>
+
+                            <h4><i class="fas fa-code"></i> Optimized T-SQL Stored Procedure Snippet</h4>
+                            <div class="code-snippet-wrapper">
+                                <div class="code-header">
+                                    <span><i class="fas fa-database"></i> sp_GetOptimizedPatientAnalytics.sql</span>
+                                    <span class="code-lang">T-SQL / SQL Server</span>
+                                </div>
+                                <pre><code class="language-sql">CREATE PROCEDURE dbo.sp_GetOptimizedPatientAnalytics
+    @StartDate DATETIME2,
+    @EndDate DATETIME2
+AS
+BEGIN
+    SET NOCOUNT ON;
+    
+    SELECT 
+        d.DoctorId,
+        d.FullName AS DoctorName,
+        COUNT(a.AppointmentId) AS TotalAppointments,
+        SUM(CASE WHEN a.Status = 'Completed' THEN 1 ELSE 0 END) AS CompletedCount
+    FROM dbo.Doctors d WITH (NOLOCK)
+    INNER JOIN dbo.Appointments a WITH (NOLOCK) ON d.DoctorId = a.DoctorId
+    WHERE a.AppointmentDate BETWEEN @StartDate AND @EndDate
+    GROUP BY d.DoctorId, d.FullName
+    ORDER BY TotalAppointments DESC;
+END;</code></pre>
+                            </div>
+
+                            <h4><i class="fas fa-laptop-code"></i> Technologies Used</h4>
+                            <p><strong>C#, MS SQL Server, T-SQL, Stored Procedures, Index Tuning, SSMS</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="exp.title">Training &amp; Education</h2>
+            <div class="timeline">
+
+                <div class="timeline-item fade-in-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2026 – Present</div>
+                    <div class="timeline-content card">
+                        <div class="timeline-badge"><i class="fas fa-award"></i> <span data-i18n="exp1.badge">MCIT Program</span></div>
+                        <h3 data-i18n="exp1.org">Digital Egypt Pioneers Initiative (DEPI)</h3>
+                        <h4 data-i18n="exp1.role">.NET Backend Development Trainee (MCIT)</h4>
+                        <p data-i18n="exp1.desc">Enrolled in the intensive .NET Backend Development track by the Ministry of Communications and Information Technology (MCIT). Focused on ASP.NET Core MVC, Entity Framework Core, clean architecture, and modern C# web development.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Summer 2026</div>
+                    <div class="timeline-content card">
+                        <div class="timeline-badge"><i class="fas fa-university"></i> <span data-i18n="exp2.badge">ITI Training</span></div>
+                        <h3 data-i18n="exp2.org">Information Technology Institute (ITI)</h3>
+                        <h4 data-i18n="exp2.role">.NET Software Development Trainee</h4>
+                        <p data-i18n="exp2.desc">Completed intensive practical training, engineering 5 functional database-driven modules with full CRUD capabilities. Designed structured relational table schemas and complex LINQ queries, reducing database execution time in project simulations.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023 – Expected 2027</div>
+                    <div class="timeline-content card">
+                        <div class="timeline-badge"><i class="fas fa-graduation-cap"></i> <span data-i18n="exp3.badge">Academic Degree</span></div>
+                        <h3 data-i18n="exp3.org">Computer Science Student</h3>
+                        <h4 data-i18n="exp3.role">Faculty of Computers &amp; Information Technology</h4>
+                        <p data-i18n="exp3.desc">Pursuing Bachelor's degree in Computer Science with a strong focus on Software Engineering, Relational Database Systems, Data Structures &amp; Algorithms, Computer Networks, and Object-Oriented Programming (OOP).</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section services-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="services.title">Services</h2>
+            <div class="services-grid">
+
+                <div class="service-card fade-in-up">
+                    <div class="service-card-image">
+                        <img src="images/service_aspnet.jpg" alt="ASP.NET Core MVC Applications" class="service-img" loading="lazy">
+                        <div class="service-scan-line"></div>
+                        <div class="service-img-overlay"></div>
+                    </div>
+                    <div class="service-card-top">
+                        <div class="service-icon-wrapper">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <span class="service-num">01</span>
+                    </div>
+                    <h3 data-i18n="s1.title">ASP.NET Core &amp; MVC Applications</h3>
+                    <p data-i18n="s1.desc">Building high-performance, maintainable backend web applications and MVC portals with C#, ASP.NET Core, and Entity Framework Core.</p>
+                    <div class="service-features">
+                        <span class="service-tag"><i class="fas fa-check-circle"></i> <span data-i18n="s1.tag1">Clean Architecture</span></span>
+                        <span class="service-tag"><i class="fas fa-check-circle"></i> <span data-i18n="s1.tag2">EF Core ORM</span></span>
+                        <span class="service-tag"><i class="fas fa-check-circle"></i> <span data-i18n="s1.tag3">MVC Views &amp; Controllers</span></span>
+                    </div>
+                    <a href="#contact" class="service-action-btn"><span data-i18n="s1.btn">Discuss Project</span> <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card fade-in-up" style="transition-delay: 0.1s;">
+                    <div class="service-card-image">
+                        <img src="images/service_database.jpg" alt="SQL Server Database Engineering" class="service-img" loading="lazy">
+                        <div class="service-scan-line"></div>
+                        <div class="service-img-overlay"></div>
+                    </div>
+                    <div class="service-card-top">
+                        <div class="service-icon-wrapper">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <span class="service-num">02</span>
+                    </div>
+                    <h3 data-i18n="s2.title">SQL Server Database Engineering</h3>
+                    <p data-i18n="s2.desc">Designing normalized relational SQL database schemas, writing complex T-SQL stored procedures, and tuning queries for maximum throughput.</p>
+                    <div class="service-features">
+                        <span class="service-tag"><i class="fas fa-check-circle"></i> <span data-i18n="s2.tag1">Schema Normalization</span></span>
+                        <span class="service-tag"><i class="fas fa-check-circle"></i> <span data-i18n="s2.tag2">T-SQL Stored Procedures</span></span>
+                        <span class="service-tag"><i class="fas fa-check-circle"></i> <span data-i18n="s2.tag3">Query Optimization</span></span>
+                    </div>
+                    <a href="#contact" class="service-action-btn"><span data-i18n="s2.btn">Optimize Database</span> <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card fade-in-up" style="transition-delay: 0.2s;">
+                    <div class="service-card-image">
+                        <img src="images/service_sockets.jpg" alt="Multithreaded Socket and Systems Logic" class="service-img" loading="lazy">
+                        <div class="service-scan-line"></div>
+                        <div class="service-img-overlay"></div>
+                    </div>
+                    <div class="service-card-top">
+                        <div class="service-icon-wrapper">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <span class="service-num">03</span>
+                    </div>
+                    <h3 data-i18n="s3.title">Multithreaded Socket &amp; Systems Logic</h3>
+                    <p data-i18n="s3.desc">Developing real-time TCP/IP client-server network applications with connection lifecycle management and robust thread synchronization.</p>
+                    <div class="service-features">
+                        <span class="service-tag"><i class="fas fa-check-circle"></i> <span data-i18n="s3.tag1">TCP/IP Sockets</span></span>
+                        <span class="service-tag"><i class="fas fa-check-circle"></i> <span data-i18n="s3.tag2">Multithreading</span></span>
+                        <span class="service-tag"><i class="fas fa-check-circle"></i> <span data-i18n="s3.tag3">Memory Safety</span></span>
+                    </div>
+                    <a href="#contact" class="service-action-btn"><span data-i18n="s3.btn">Build Solution</span> <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card fade-in-up" style="transition-delay: 0.3s;">
+                    <div class="service-card-image service-card-image--collab">
+                        <div class="collab-container">
+                            <div class="collab-orbit"></div>
+                            <div class="collab-orbit collab-orbit-outer"></div>
+
+                            <div class="collab-badge badge-sprint"><i class="fas fa-sync-alt fa-spin-slow"></i> <span>Iterative Sprints</span></div>
+                            <div class="collab-badge badge-feedback"><i class="fas fa-comments"></i> <span>Direct Feedback</span></div>
+                            <div class="collab-badge badge-delivery"><i class="fas fa-rocket"></i> <span>Continuous Revisions</span></div>
+
+                            <div class="collab-center-node">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+
+                            <div class="service-img-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="service-card-top">
+                        <div class="service-icon-wrapper">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <span class="service-num">04</span>
+                    </div>
+                    <h3 data-i18n="s4.title">Iterative Development &amp; Collaboration</h3>
+                    <p data-i18n="s4.desc">Working step-by-step alongside clients and engineering teams—offering flexible feedback accommodation, transparent communication, and continuous revisions.</p>
+                    <div class="service-features">
+                        <span class="service-tag"><i class="fas fa-check-circle"></i> <span data-i18n="s4.tag1">Step-by-Step Delivery</span></span>
+                        <span class="service-tag"><i class="fas fa-check-circle"></i> <span data-i18n="s4.tag2">Continuous Feedback</span></span>
+                        <span class="service-tag"><i class="fas fa-check-circle"></i> <span data-i18n="s4.tag3">Flexible Revisions</span></span>
+                    </div>
+                    <a href="#contact" class="service-action-btn"><span data-i18n="s4.btn">Start Collaboration</span> <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact.title">Get In Touch</h2>
+            <div class="contact-wrapper">
+
+                <div class="contact-info fade-in-left">
+                    <h3 data-i18n="contact.infoTitle">Contact Information</h3>
+                    <p data-i18n="contact.infoDesc">Feel free to reach out for backend development opportunities, collaborations, or technical inquiries.</p>
+
+                    <div class="contact-details-list">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Sohag,+Egypt" target="_blank"
+                                aria-label="View Location on Google Maps" data-i18n="contact.location">Sohag, Egypt</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <a href="tel:+201157492327" aria-label="Call Phone Number">+20 115 749 2327</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:ahmed.salah35084846@gmail.com" aria-label="Send Email">ahmed.salah35084846@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/ahmed-salah-b99353293" target="_blank" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/ahmed-salah" target="_blank" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100077121641925" target="_blank" aria-label="Facebook"><i
+                                class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form fade-in-right" id="contactForm">
+                    <div class="form-group">
+                        <label for="name" data-i18n="contact.nameLabel">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" data-i18n-placeholder="contact.namePlaceholder" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-i18n="contact.emailLabel">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" data-i18n-placeholder="contact.emailPlaceholder" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" data-i18n="contact.subjectLabel">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="e.g. Job Opportunity / Freelance Project" data-i18n-placeholder="contact.subjectPlaceholder" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-i18n="contact.msgLabel">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Your Message" data-i18n-placeholder="contact.msgPlaceholder" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="sendBtn">
+                        <span data-i18n="contact.sendBtn">Send Message</span> <i class="fas fa-paper-plane" style="margin-left: 8px;"></i>
+                    </button>
+                    <p class="contact-message" id="contactMessage"></p>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer"></footer>
+
+    <div id="project-modal" class="modal-overlay">
+        <div class="modal-container">
+            <button class="close-modal">&times;</button>
+            <div class="modal-header">
+                <h3 id="modal-title">Project Details</h3>
+            </div>
+            <div id="modal-body" class="modal-body">
+            </div>
+        </div>
+    </div>
+
+    <button id="backToTop" class="back-to-top-btn" aria-label="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <a href="https://wa.me/201157492327" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat on WhatsApp</span>
+    </a>
+
+    <script src="js/translations.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
